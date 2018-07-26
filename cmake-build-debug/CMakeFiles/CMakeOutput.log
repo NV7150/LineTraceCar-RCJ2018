@@ -1,0 +1,288 @@
+The target system is: Arduino -  - 
+The host system is: Darwin - 17.5.0 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/Users/gotoudaisuke/Desktop/Developed_Applications/arudino/LineTraceCar/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/Users/gotoudaisuke/Desktop/Developed_Applications/arudino/LineTraceCar/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /Users/gotoudaisuke/Desktop/Developed_Applications/arudino/LineTraceCar/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3ce1d/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_3ce1d.dir/build.make CMakeFiles/cmTC_3ce1d.dir/build
+Building C object CMakeFiles/cmTC_3ce1d.dir/testCCompiler.c.obj
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc   -g -Os -w -ffunction-sections -fdata-sections -MMD    -o CMakeFiles/cmTC_3ce1d.dir/testCCompiler.c.obj   -c /Users/gotoudaisuke/Desktop/Developed_Applications/arudino/LineTraceCar/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_3ce1d
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ce1d.dir/link.txt --verbose=1
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc -g -Os -w -ffunction-sections -fdata-sections -MMD   -w -Os -Wl,--gc-sections  CMakeFiles/cmTC_3ce1d.dir/testCCompiler.c.obj  -o cmTC_3ce1d 
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/gotoudaisuke/Desktop/Developed_Applications/arudino/LineTraceCar/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_33ed6/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_33ed6.dir/build.make CMakeFiles/cmTC_33ed6.dir/build
+Building C object CMakeFiles/cmTC_33ed6.dir/CMakeCCompilerABI.c.obj
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc   -g -Os -w -ffunction-sections -fdata-sections -MMD    -o CMakeFiles/cmTC_33ed6.dir/CMakeCCompilerABI.c.obj   -c /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_33ed6
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33ed6.dir/link.txt --verbose=1
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc -g -Os -w -ffunction-sections -fdata-sections -MMD   -w -Os -Wl,--gc-sections -v CMakeFiles/cmTC_33ed6.dir/CMakeCCompilerABI.c.obj  -o cmTC_33ed6 
+Using built-in specs.
+Reading specs from /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/device-specs/specs-avr2
+COLLECT_GCC=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc
+COLLECT_LTO_WRAPPER=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/lto-wrapper
+Target: avr
+Configured with: ../gcc/configure --enable-fixed-point --enable-languages=c,c++ --prefix=/Users/jenkins/jenkins/workspace/avr-gcc/label/mac-mini/objdir --enable-long-long --disable-nls --disable-checking --disable-libssp --disable-libada --disable-shared --enable-lto --with-avrlibc=yes --with-dwarf2 --disable-doc --target=avr
+Thread model: single
+gcc version 4.9.2 (GCC) 
+COMPILER_PATH=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/../../../../avr/bin/
+LIBRARY_PATH=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/
+COLLECT_GCC_OPTIONS='-g' '-Os' '-w' '-ffunction-sections' '-fdata-sections' '-MMD' '-w' '-Os' '-v' '-o' 'cmTC_33ed6' '-specs=device-specs/specs-avr2'
+ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/collect2 -plugin /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/liblto_plugin.so -plugin-opt=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/lto-wrapper -plugin-opt=-fresolution=/var/folders/zk/x20mb92j29z9v_s1s9mj4n7m0000gn/T//cci5R2tS.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_33ed6 -L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2 -L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc -L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib --gc-sections CMakeFiles/cmTC_33ed6.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lm -lc --end-group
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(avr-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/gotoudaisuke/Desktop/Developed_Applications/arudino/LineTraceCar/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_33ed6/fast"]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_33ed6.dir/build.make CMakeFiles/cmTC_33ed6.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_33ed6.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc   -g -Os -w -ffunction-sections -fdata-sections -MMD    -o CMakeFiles/cmTC_33ed6.dir/CMakeCCompilerABI.c.obj   -c /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_33ed6]
+  ignore line: [/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33ed6.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc -g -Os -w -ffunction-sections -fdata-sections -MMD   -w -Os -Wl,--gc-sections -v CMakeFiles/cmTC_33ed6.dir/CMakeCCompilerABI.c.obj  -o cmTC_33ed6 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Reading specs from /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/device-specs/specs-avr2]
+  ignore line: [COLLECT_GCC=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/lto-wrapper]
+  ignore line: [Target: avr]
+  ignore line: [Configured with: ../gcc/configure --enable-fixed-point --enable-languages=c,c++ --prefix=/Users/jenkins/jenkins/workspace/avr-gcc/label/mac-mini/objdir --enable-long-long --disable-nls --disable-checking --disable-libssp --disable-libada --disable-shared --enable-lto --with-avrlibc=yes --with-dwarf2 --disable-doc --target=avr]
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 4.9.2 (GCC) ]
+  ignore line: [COMPILER_PATH=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/../../../../avr/bin/]
+  ignore line: [LIBRARY_PATH=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-g' '-Os' '-w' '-ffunction-sections' '-fdata-sections' '-MMD' '-w' '-Os' '-v' '-o' 'cmTC_33ed6' '-specs=device-specs/specs-avr2']
+  link line: [ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/collect2 -plugin /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/liblto_plugin.so -plugin-opt=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/lto-wrapper -plugin-opt=-fresolution=/var/folders/zk/x20mb92j29z9v_s1s9mj4n7m0000gn/T//cci5R2tS.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_33ed6 -L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2 -L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc -L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib --gc-sections CMakeFiles/cmTC_33ed6.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lm -lc --end-group]
+    arg [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/var/folders/zk/x20mb92j29z9v_s1s9mj4n7m0000gn/T//cci5R2tS.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lm] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_33ed6] ==> ignore
+    arg [-L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2] ==> dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2]
+    arg [-L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc] ==> dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc]
+    arg [-L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib] ==> dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib]
+    arg [--gc-sections] ==> ignore
+    arg [CMakeFiles/cmTC_33ed6.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lm] ==> lib [m]
+    arg [-lc] ==> lib [c]
+    arg [--end-group] ==> ignore
+  collapse library dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2] ==> [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/4.9.2]
+  collapse library dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc] ==> [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc]
+  collapse library dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib] ==> [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/avr/lib]
+  implicit libs: [gcc;m;c]
+  implicit dirs: [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/4.9.2;/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc;/Applications/Arduino.app/Contents/Java/hardware/tools/avr/avr/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /Users/gotoudaisuke/Desktop/Developed_Applications/arudino/LineTraceCar/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_83bf7/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_83bf7.dir/build.make CMakeFiles/cmTC_83bf7.dir/build
+Building C object CMakeFiles/cmTC_83bf7.dir/feature_tests.c.obj
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc   -g -Os -w -ffunction-sections -fdata-sections -MMD    -std=c11 -o CMakeFiles/cmTC_83bf7.dir/feature_tests.c.obj   -c /Users/gotoudaisuke/Desktop/Developed_Applications/arudino/LineTraceCar/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_83bf7
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83bf7.dir/link.txt --verbose=1
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc -g -Os -w -ffunction-sections -fdata-sections -MMD   -w -Os -Wl,--gc-sections  CMakeFiles/cmTC_83bf7.dir/feature_tests.c.obj  -o cmTC_83bf7 
+
+
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /Users/gotoudaisuke/Desktop/Developed_Applications/arudino/LineTraceCar/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f10b8/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_f10b8.dir/build.make CMakeFiles/cmTC_f10b8.dir/build
+Building C object CMakeFiles/cmTC_f10b8.dir/feature_tests.c.obj
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc   -g -Os -w -ffunction-sections -fdata-sections -MMD    -std=c99 -o CMakeFiles/cmTC_f10b8.dir/feature_tests.c.obj   -c /Users/gotoudaisuke/Desktop/Developed_Applications/arudino/LineTraceCar/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_f10b8
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f10b8.dir/link.txt --verbose=1
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc -g -Os -w -ffunction-sections -fdata-sections -MMD   -w -Os -Wl,--gc-sections  CMakeFiles/cmTC_f10b8.dir/feature_tests.c.obj  -o cmTC_f10b8 
+
+
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /Users/gotoudaisuke/Desktop/Developed_Applications/arudino/LineTraceCar/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_45d4c/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_45d4c.dir/build.make CMakeFiles/cmTC_45d4c.dir/build
+Building C object CMakeFiles/cmTC_45d4c.dir/feature_tests.c.obj
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc   -g -Os -w -ffunction-sections -fdata-sections -MMD    -std=c90 -o CMakeFiles/cmTC_45d4c.dir/feature_tests.c.obj   -c /Users/gotoudaisuke/Desktop/Developed_Applications/arudino/LineTraceCar/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_45d4c
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45d4c.dir/link.txt --verbose=1
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc -g -Os -w -ffunction-sections -fdata-sections -MMD   -w -Os -Wl,--gc-sections  CMakeFiles/cmTC_45d4c.dir/feature_tests.c.obj  -o cmTC_45d4c 
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /Users/gotoudaisuke/Desktop/Developed_Applications/arudino/LineTraceCar/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a7c5f/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_a7c5f.dir/build.make CMakeFiles/cmTC_a7c5f.dir/build
+Building CXX object CMakeFiles/cmTC_a7c5f.dir/testCXXCompiler.cxx.obj
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++    -g -Os -w -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD    -o CMakeFiles/cmTC_a7c5f.dir/testCXXCompiler.cxx.obj -c /Users/gotoudaisuke/Desktop/Developed_Applications/arudino/LineTraceCar/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_a7c5f
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7c5f.dir/link.txt --verbose=1
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++  -g -Os -w -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD   -w -Os -Wl,--gc-sections  CMakeFiles/cmTC_a7c5f.dir/testCXXCompiler.cxx.obj  -o cmTC_a7c5f 
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/gotoudaisuke/Desktop/Developed_Applications/arudino/LineTraceCar/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c6b2b/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_c6b2b.dir/build.make CMakeFiles/cmTC_c6b2b.dir/build
+Building CXX object CMakeFiles/cmTC_c6b2b.dir/CMakeCXXCompilerABI.cpp.obj
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++    -g -Os -w -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD    -o CMakeFiles/cmTC_c6b2b.dir/CMakeCXXCompilerABI.cpp.obj -c /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_c6b2b
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6b2b.dir/link.txt --verbose=1
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++  -g -Os -w -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD   -w -Os -Wl,--gc-sections -v CMakeFiles/cmTC_c6b2b.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_c6b2b 
+Using built-in specs.
+Reading specs from /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/device-specs/specs-avr2
+COLLECT_GCC=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++
+COLLECT_LTO_WRAPPER=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/lto-wrapper
+Target: avr
+Configured with: ../gcc/configure --enable-fixed-point --enable-languages=c,c++ --prefix=/Users/jenkins/jenkins/workspace/avr-gcc/label/mac-mini/objdir --enable-long-long --disable-nls --disable-checking --disable-libssp --disable-libada --disable-shared --enable-lto --with-avrlibc=yes --with-dwarf2 --disable-doc --target=avr
+Thread model: single
+gcc version 4.9.2 (GCC) 
+COMPILER_PATH=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/../../../../avr/bin/
+LIBRARY_PATH=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/
+COLLECT_GCC_OPTIONS='-g' '-Os' '-w' '-fno-exceptions' '-ffunction-sections' '-fdata-sections' '-fno-threadsafe-statics' '-MMD' '-w' '-Os' '-v' '-o' 'cmTC_c6b2b' '-specs=device-specs/specs-avr2'
+ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/collect2 -plugin /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/liblto_plugin.so -plugin-opt=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/lto-wrapper -plugin-opt=-fresolution=/var/folders/zk/x20mb92j29z9v_s1s9mj4n7m0000gn/T//ccMDmKzy.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_c6b2b -L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2 -L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc -L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib --gc-sections CMakeFiles/cmTC_c6b2b.dir/CMakeCXXCompilerABI.cpp.obj -lgcc -lm --start-group -lgcc -lm -lc --end-group
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(avr-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/gotoudaisuke/Desktop/Developed_Applications/arudino/LineTraceCar/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_c6b2b/fast"]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_c6b2b.dir/build.make CMakeFiles/cmTC_c6b2b.dir/build]
+  ignore line: [Building CXX object CMakeFiles/cmTC_c6b2b.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++    -g -Os -w -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD    -o CMakeFiles/cmTC_c6b2b.dir/CMakeCXXCompilerABI.cpp.obj -c /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_c6b2b]
+  ignore line: [/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6b2b.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++  -g -Os -w -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD   -w -Os -Wl,--gc-sections -v CMakeFiles/cmTC_c6b2b.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_c6b2b ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Reading specs from /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/device-specs/specs-avr2]
+  ignore line: [COLLECT_GCC=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/lto-wrapper]
+  ignore line: [Target: avr]
+  ignore line: [Configured with: ../gcc/configure --enable-fixed-point --enable-languages=c,c++ --prefix=/Users/jenkins/jenkins/workspace/avr-gcc/label/mac-mini/objdir --enable-long-long --disable-nls --disable-checking --disable-libssp --disable-libada --disable-shared --enable-lto --with-avrlibc=yes --with-dwarf2 --disable-doc --target=avr]
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 4.9.2 (GCC) ]
+  ignore line: [COMPILER_PATH=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/../../../../avr/bin/]
+  ignore line: [LIBRARY_PATH=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-g' '-Os' '-w' '-fno-exceptions' '-ffunction-sections' '-fdata-sections' '-fno-threadsafe-statics' '-MMD' '-w' '-Os' '-v' '-o' 'cmTC_c6b2b' '-specs=device-specs/specs-avr2']
+  link line: [ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/collect2 -plugin /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/liblto_plugin.so -plugin-opt=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/lto-wrapper -plugin-opt=-fresolution=/var/folders/zk/x20mb92j29z9v_s1s9mj4n7m0000gn/T//ccMDmKzy.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_c6b2b -L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2 -L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc -L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib --gc-sections CMakeFiles/cmTC_c6b2b.dir/CMakeCXXCompilerABI.cpp.obj -lgcc -lm --start-group -lgcc -lm -lc --end-group]
+    arg [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/4.9.2/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/var/folders/zk/x20mb92j29z9v_s1s9mj4n7m0000gn/T//ccMDmKzy.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lm] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_c6b2b] ==> ignore
+    arg [-L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2] ==> dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2]
+    arg [-L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc] ==> dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc]
+    arg [-L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib] ==> dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib]
+    arg [--gc-sections] ==> ignore
+    arg [CMakeFiles/cmTC_c6b2b.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lm] ==> lib [m]
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lm] ==> lib [m]
+    arg [-lc] ==> lib [c]
+    arg [--end-group] ==> ignore
+  collapse library dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2] ==> [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/4.9.2]
+  collapse library dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc] ==> [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc]
+  collapse library dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib] ==> [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/avr/lib]
+  implicit libs: [gcc;m;gcc;m;c]
+  implicit dirs: [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/4.9.2;/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc;/Applications/Arduino.app/Contents/Java/hardware/tools/avr/avr/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /Users/gotoudaisuke/Desktop/Developed_Applications/arudino/LineTraceCar/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7a036/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_7a036.dir/build.make CMakeFiles/cmTC_7a036.dir/build
+Building CXX object CMakeFiles/cmTC_7a036.dir/feature_tests.cxx.obj
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++    -g -Os -w -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD    -std=c++14 -o CMakeFiles/cmTC_7a036.dir/feature_tests.cxx.obj -c /Users/gotoudaisuke/Desktop/Developed_Applications/arudino/LineTraceCar/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_7a036
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a036.dir/link.txt --verbose=1
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++  -g -Os -w -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD   -w -Os -Wl,--gc-sections  CMakeFiles/cmTC_7a036.dir/feature_tests.cxx.obj  -o cmTC_7a036 
+
+
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /Users/gotoudaisuke/Desktop/Developed_Applications/arudino/LineTraceCar/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_56898/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_56898.dir/build.make CMakeFiles/cmTC_56898.dir/build
+Building CXX object CMakeFiles/cmTC_56898.dir/feature_tests.cxx.obj
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++    -g -Os -w -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD    -std=c++11 -o CMakeFiles/cmTC_56898.dir/feature_tests.cxx.obj -c /Users/gotoudaisuke/Desktop/Developed_Applications/arudino/LineTraceCar/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_56898
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56898.dir/link.txt --verbose=1
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++  -g -Os -w -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD   -w -Os -Wl,--gc-sections  CMakeFiles/cmTC_56898.dir/feature_tests.cxx.obj  -o cmTC_56898 
+
+
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /Users/gotoudaisuke/Desktop/Developed_Applications/arudino/LineTraceCar/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7856b/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_7856b.dir/build.make CMakeFiles/cmTC_7856b.dir/build
+Building CXX object CMakeFiles/cmTC_7856b.dir/feature_tests.cxx.obj
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++    -g -Os -w -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD    -std=c++98 -o CMakeFiles/cmTC_7856b.dir/feature_tests.cxx.obj -c /Users/gotoudaisuke/Desktop/Developed_Applications/arudino/LineTraceCar/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_7856b
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7856b.dir/link.txt --verbose=1
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++  -g -Os -w -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD   -w -Os -Wl,--gc-sections  CMakeFiles/cmTC_7856b.dir/feature_tests.cxx.obj  -o cmTC_7856b 
+
+
