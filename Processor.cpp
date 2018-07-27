@@ -10,11 +10,16 @@ bool isKeeping = false;
 bool isKeepingGreen = false;
 Command keepingCom;
 
+bool goRightGreen = false;
+bool goLeftGreen = false;
+
 bool isForwardLocked = false;
 
 Command updateCommand(){
     //プロセス前のアップデート
     preProcessUpdate();
+
+    updateGreenFlag();
 
     Command com;
     if(isKeeping){
@@ -26,6 +31,25 @@ Command updateCommand(){
     //プロセス後のアップデート
     aftProcessUpdate();
     return com;
+}
+
+void updateGreenFlag(){
+    //右が緑ならフラグを立てる
+    if(isRightGreen()){
+        goRightGreen = true;
+    }
+    //左が緑ならフラグを立てる
+    if(isLeftGreen()){
+        goLeftGreen = true;
+    }
+    //右が白ならフラグをなくす
+    if(getRight() == WHITE){
+        goRightGreen = false;
+    }
+    //左が白ならフラグをなくす
+    if(getLeft() == WHITE){
+        goLeftGreen = false;
+    }
 }
 
 Command branchKeep(){
@@ -73,7 +97,7 @@ Command branchKeep(){
 
 
 Command  branchLR(){
-    if(getRight() == BLACK && getLeft() == WHITE ){
+    if(getRight() == BLACK && getLeft() == WHITE){
         isKeeping = true;
         return TURN_RIGHT;
     }else if(getLeft() == BLACK && getRight() == WHITE){
@@ -88,7 +112,7 @@ Command  branchLR(){
 Command branchCBLR(){
     if(getCenter() == BLACK){
         if(getRight() == BLACK || getLeft() == BLACK){
-            if(isRightGreen()){
+            if(goRightGreen){
                 //進行フラグ：緑をもとにしたものなので緑進行フラグをつける
                 isKeeping = true;
                 isKeepingGreen = true;
@@ -96,7 +120,7 @@ Command branchCBLR(){
                 //ト型の場合、中央がすでに黒になっている可能性
                 isForwardLocked = true;
                 return TURN_RIGHT;
-            }else if(isLeftGreen()){
+            }else if(goLeftGreen){
                 //進行フラグ：緑をもとにしたものなので緑進行フラグをつける
                 isKeeping = true;
                 isKeepingGreen = true;

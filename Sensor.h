@@ -17,6 +17,9 @@ void sensorUpdate();
 void rightLeftGreenUpdate();
 void preColUpdate();
 
+bool isGreen(int,int,int,int);
+int shiftIn12(int dataPin, int clockPin);
+
 Color judgeColor(int);
 
 Color getPreRight();

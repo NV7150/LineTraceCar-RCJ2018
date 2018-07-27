@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include "Wheel.h"
 #include "Processor.h"
+#include "LED.h"
 
 void linetrace();
 
@@ -8,6 +9,8 @@ void printCommand(int);
 
 void setup() {
     Serial.begin(9600);
+    setupLED();
+    flashLED();
 }
 
 void loop() {

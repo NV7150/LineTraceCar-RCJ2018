@@ -19,4 +19,6 @@ Command branchAllWhite();
 Command branchForward();
 Command exception(char[]);
 
+void updateGreenFlag();
+
 #endif //LINETRACECAR_PROCESSOR_H
