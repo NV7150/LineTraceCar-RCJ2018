@@ -9,7 +9,15 @@ void moveForward();
 
 void turnRight();
 
+void spinRight();
+
 void turnLeft();
+
+void spinLeft();
+
+int getRightSpeed();
+
+int getLeftSpeed();
 
 void stop();
 

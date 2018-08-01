@@ -13,7 +13,18 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea21ecbc-e387-445a-b505-69350fa175a9" name="デフォルト" comment="" />
+    <list default="true" id="ea21ecbc-e387-445a-b505-69350fa175a9" name="デフォルト" comment="">
+      <change afterPath="$PROJECT_DIR$/EncoderManager.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EncoderManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RotaryEncoder.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RotaryEncoder.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LineTraceCar.ino" beforeDir="false" afterPath="$PROJECT_DIR$/LineTraceCar.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sensor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Sensor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sensor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Sensor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wheel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Wheel.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wheel.h" beforeDir="false" afterPath="$PROJECT_DIR$/Wheel.h" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,7 +39,7 @@
       <file leaf-file-name="Wheel.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Wheel.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
+            <state relative-caret-position="285">
               <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
               <folding>
                 <element signature="e#41#59#0" expanded="true" />
@@ -37,11 +48,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="L6470_SPI_stepMoter_sketch.ino" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../L6470_SPI_stepMoter_sketch/L6470_SPI_stepMoter_sketch.ino">
+      <file leaf-file-name="RotaryEncoder.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RotaryEncoder.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="-367">
+              <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+              <folding>
+                <element signature="e#41#67#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,8 +63,8 @@
       <file leaf-file-name="LineTraceCar.ino" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LineTraceCar.ino">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            <state relative-caret-position="373">
+              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -61,7 +75,7 @@
       <file leaf-file-name="Processor.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Processor.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
+            <state relative-caret-position="-1476">
               <caret line="34" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="e#41#63#0" expanded="true" />
@@ -70,7 +84,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LED.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LED.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LED.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
@@ -82,13 +96,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LED.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LED.h">
+      <file leaf-file-name="EncoderManager.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EncoderManager.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            <state relative-caret-position="375">
+              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+              <folding>
+                <element signature="e#118#144#0" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="Processor.h" pinned="false" current-in-tab="false">
@@ -100,32 +122,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sensor.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sensor.cpp">
+      <file leaf-file-name="RotaryEncoder.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RotaryEncoder.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2175">
-              <caret line="145" column="1" lean-forward="true" selection-start-line="145" selection-start-column="1" selection-end-line="145" selection-end-column="1" />
-              <folding>
-                <element signature="e#41#60#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ltika.ino" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Ltika/Ltika.ino">
+      <file leaf-file-name="EncoderManager.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EncoderManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sensor.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sensor.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+            <state relative-caret-position="278">
+              <caret line="41" column="1" lean-forward="true" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -152,24 +162,33 @@
       <replace>isLeftGreen()</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/cmake-build-debug/Tracer.h" />
-        <option value="$PROJECT_DIR$/Wheel.h" />
         <option value="$PROJECT_DIR$/../LEDTester/LEDTester.ino" />
         <option value="$PROJECT_DIR$/../../../L6470_SPI_stepMoter_sketch/L6470_SPI_stepMoter_sketch.ino" />
         <option value="$PROJECT_DIR$/Tracer.cpp" />
         <option value="$PROJECT_DIR$/Sencer.cpp" />
         <option value="$PROJECT_DIR$/Tracer.h" />
-        <option value="$PROJECT_DIR$/Wheel.cpp" />
-        <option value="$PROJECT_DIR$/LineTraceCar.ino" />
         <option value="$PROJECT_DIR$/Processor.h" />
         <option value="$PROJECT_DIR$/Processor.cpp" />
-        <option value="$PROJECT_DIR$/Sensor.h" />
-        <option value="$PROJECT_DIR$/Sensor.cpp" />
         <option value="$PROJECT_DIR$/LED.h" />
         <option value="$PROJECT_DIR$/LED.cpp" />
+        <option value="$PROJECT_DIR$/Sensor.h" />
+        <option value="$PROJECT_DIR$/Wheel.h" />
+        <option value="$USER_HOME$/Downloads/rorinco/rorinco.ino" />
+        <option value="$PROJECT_DIR$/Color.h" />
+        <option value="$PROJECT_DIR$/RotaryEncoder.h" />
+        <option value="$PROJECT_DIR$/Sensor.cpp" />
+        <option value="$PROJECT_DIR$/RotaryEncoder.cpp" />
+        <option value="$PROJECT_DIR$/Wheel.cpp" />
+        <option value="$PROJECT_DIR$/EncoderManager.h" />
+        <option value="$PROJECT_DIR$/LineTraceCar.ino" />
+        <option value="$PROJECT_DIR$/EncoderManager.cpp" />
       </list>
     </option>
   </component>
@@ -262,12 +281,13 @@
       <workItem from="1531110367512" duration="12101000" />
       <workItem from="1531800654022" duration="7217000" />
       <workItem from="1532313502070" duration="29307000" />
-      <workItem from="1532667991890" duration="3220000" />
+      <workItem from="1532667991890" duration="3495000" />
+      <workItem from="1533012984701" duration="19907000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69378000" />
+    <option name="totallyTimeSpent" value="89560000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -275,10 +295,9 @@
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17430556" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="CMake" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32900944" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="CMake" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -290,6 +309,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32900944" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,23 +324,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Wheel.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding>
-            <element signature="e#41#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../L6470_SPI_stepMoter_sketch/L6470_SPI_stepMoter_sketch.ino">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LineTraceCar.ino">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
@@ -518,13 +521,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tracer.h" />
     <entry file="file://$PROJECT_DIR$/Tracer.cpp" />
-    <entry file="file://$PROJECT_DIR$/Wheel.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../L6470_SPI_stepMoter_sketch/L6470_SPI_stepMoter_sketch.ino">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -534,18 +530,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../Ltika/Ltika.ino">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+        <state relative-caret-position="510">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/abi.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LED.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/rorinco/rorinco.ino">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-240">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sensor.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Color.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sensor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1686">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+          <folding>
+            <element signature="e#41#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wheel.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Wheel.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
+        <state relative-caret-position="285">
           <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding>
             <element signature="e#41#59#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RotaryEncoder.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -556,49 +607,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sensor.h">
+    <entry file="file://$PROJECT_DIR$/RotaryEncoder.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LED.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sensor.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2175">
-          <caret line="145" column="1" lean-forward="true" selection-start-line="145" selection-start-column="1" selection-end-line="145" selection-end-column="1" />
+        <state relative-caret-position="-367">
+          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
           <folding>
-            <element signature="e#41#60#0" expanded="true" />
+            <element signature="e#41#67#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Processor.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#41#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LineTraceCar.ino">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/LED.cpp">
       <provider selected="true" editor-type-id="text-editor">
@@ -607,6 +627,43 @@
           <folding>
             <element signature="e#41#57#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Processor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1476">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#41#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EncoderManager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding>
+            <element signature="e#118#144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LineTraceCar.ino">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EncoderManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="41" column="1" lean-forward="true" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
         </state>
       </provider>
     </entry>

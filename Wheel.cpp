@@ -17,11 +17,10 @@ const int LEFT_F = 4;
 const int LEFT_B = 5;
 
 //速さ
-const int SPEED = 255;
+const int SPEED = 100;
 
-const int STOP_LIMIT = 100000;
-
-int stopCount = 0;
+int currentRightSpeed = 0;
+int currentLeftSpeed = 0;
 
 //前進
 void moveForward(){
@@ -29,7 +28,9 @@ void moveForward(){
     analogWrite(RIGHT_B,0);
     analogWrite(LEFT_F,SPEED);
     analogWrite(LEFT_B,0);
-    stopCount = 0;
+
+    currentRightSpeed = SPEED;
+    currentLeftSpeed = SPEED;
 }
 
 //右旋回
@@ -38,25 +39,55 @@ void turnRight(){
     analogWrite(RIGHT_B,0);
     analogWrite(LEFT_F,SPEED);
     analogWrite(LEFT_B,0);
-    stopCount = 0;
-    stopCount = 0;
+
+    currentRightSpeed = 0;
+    currentLeftSpeed = SPEED;
 }
+
+//右回転
+void spinRight(){
+    analogWrite(RIGHT_F,0);
+    analogWrite(RIGHT_B,SPEED);
+    analogWrite(LEFT_F,SPEED);
+    analogWrite(LEFT_B,0);
+
+    currentRightSpeed = -SPEED;
+    currentLeftSpeed = SPEED;
+}
+
 //左旋回
 void turnLeft(){
     analogWrite(RIGHT_F,SPEED);
     analogWrite(RIGHT_B,0);
     analogWrite(LEFT_F,0);
     analogWrite(LEFT_B,0);
-    stopCount = 0;
+
+    currentRightSpeed = SPEED;
+    currentLeftSpeed = 0;
 }
 
-//停止
+void spinLeft(){
+    analogWrite(RIGHT_F,SPEED);
+    analogWrite(RIGHT_B,0);
+    analogWrite(LEFT_F,0);
+    analogWrite(LEFT_B,SPEED);
+
+    currentRightSpeed = SPEED;
+    currentLeftSpeed = -SPEED;
+}
+
+int getRightSpeed(){
+    return currentRightSpeed;
+}
+
+int getLeftSpeed(){
+    return currentLeftSpeed;
+}
+
 void stop(){
-    stopCount++;
-//    if(stopCount >= STOP_LIMIT) {
-//        analogWrite(RIGHT_F, 0);
-//        analogWrite(RIGHT_B, 0);
-//        analogWrite(LEFT_F, 0);
-//        analogWrite(LEFT_B, 0);
-//    }
+    analogWrite(RIGHT_F,0);
+    analogWrite(RIGHT_B,0);
+    analogWrite(LEFT_F,0);
+    analogWrite(LEFT_B,0);
+
 }

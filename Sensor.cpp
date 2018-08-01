@@ -40,7 +40,7 @@ const int COLOR_L_CK;
 const int COLOR_L_GATE;
 
 //しきい値
-const int BORDER_LINE_WHITE = 400;
+const int BORDER_LINE_WHITE = 110;
 
 const int BORDER_LINE_GREEN = 3000;
 

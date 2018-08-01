@@ -5,10 +5,7 @@
 #ifndef LINETRACECAR_SENCER_H
 #define LINETRACECAR_SENCER_H
 
-enum Color{
-    BLACK,
-    WHITE
-};
+#include "Color.h"
 
 void preProcessUpdate();
 void aftProcessUpdate();

@@ -2,22 +2,55 @@
 #include "Wheel.h"
 #include "Processor.h"
 #include "LED.h"
+#include "EncoderManager.h"
 
 void linetrace();
+void spin90();
+void spinback90();
 
 void printCommand(int);
 
+bool a;
+bool b;
+
+bool reseted = false;
+EncoderManager encoMan;
+
 void setup() {
     Serial.begin(9600);
-    setupLED();
-    flashLED();
+//    setupLED();
+//    flashLED();
 }
 
 void loop() {
+    if(!a){
+        spin90();
+    }else{
+        if(!reseted){
+            encoMan.reset();
+            reseted = true;
+        }
+        if(!b) {
+            spinback90();
+        }else {
+            stop();
+        }
+    }
 //    moveForward();
-    linetrace();
+//    linetrace();
     //動かない場合はディレイを消す
 //    delay(50);
+//    stop();
+}
+
+void spin90(){
+    if(encoMan.turnLeftTillCarAngle(180))
+         a = true;
+}
+
+void spinback90(){
+    if(encoMan.turnRightTillCarAngle(180))
+        b = true;
 }
 
 void linetrace(){
