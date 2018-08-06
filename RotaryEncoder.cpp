@@ -9,8 +9,8 @@
 
 
 void RotaryEncoder::encodeUpdate() {
-    Color right = judgeColor(analogRead(RIGHT_PIN));
-    Color left = judgeColor(analogRead(LEFT_PIN));
+    Color right = judgeColor(analogRead(RE_RIGHT_PIN));
+    Color left = judgeColor(analogRead(RE_LEFT_PIN));
 
     if(right == WHITE){
         if(!wasRightWhite) {

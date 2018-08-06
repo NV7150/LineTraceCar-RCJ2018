@@ -3,6 +3,7 @@
 //
 
 #include "Wheel.h"
+#include "Pins.h"
 #include <Arduino.h>
 
 /*
@@ -11,10 +12,7 @@
  * 左前進：5ピン
  * 左後退：4ピン
  */
-const int RIGHT_F = 7;
-const int RIGHT_B = 6;
-const int LEFT_F = 4;
-const int LEFT_B = 5;
+
 
 //速さ
 const int SPEED = 100;
@@ -24,10 +22,10 @@ int currentLeftSpeed = 0;
 
 //前進
 void moveForward(){
-    analogWrite(RIGHT_F,SPEED);
-    analogWrite(RIGHT_B,0);
-    analogWrite(LEFT_F,SPEED);
-    analogWrite(LEFT_B,0);
+    analogWrite(MOTOR_RIGHT_F,SPEED);
+    analogWrite(MOTOR_RIGHT_B,0);
+    analogWrite(MOTOR_LEFT_F,SPEED);
+    analogWrite(MOTOR_LEFT_B,0);
 
     currentRightSpeed = SPEED;
     currentLeftSpeed = SPEED;
@@ -35,10 +33,10 @@ void moveForward(){
 
 //右旋回
 void turnRight(){
-    analogWrite(RIGHT_F,0);
-    analogWrite(RIGHT_B,0);
-    analogWrite(LEFT_F,SPEED);
-    analogWrite(LEFT_B,0);
+    analogWrite(MOTOR_RIGHT_F,0);
+    analogWrite(MOTOR_RIGHT_B,0);
+    analogWrite(MOTOR_LEFT_F,SPEED);
+    analogWrite(MOTOR_LEFT_B,0);
 
     currentRightSpeed = 0;
     currentLeftSpeed = SPEED;
@@ -46,10 +44,10 @@ void turnRight(){
 
 //右回転
 void spinRight(){
-    analogWrite(RIGHT_F,0);
-    analogWrite(RIGHT_B,SPEED);
-    analogWrite(LEFT_F,SPEED);
-    analogWrite(LEFT_B,0);
+    analogWrite(MOTOR_RIGHT_F,0);
+    analogWrite(MOTOR_RIGHT_B,SPEED);
+    analogWrite(MOTOR_LEFT_F,SPEED);
+    analogWrite(MOTOR_LEFT_B,0);
 
     currentRightSpeed = -SPEED;
     currentLeftSpeed = SPEED;
@@ -57,20 +55,20 @@ void spinRight(){
 
 //左旋回
 void turnLeft(){
-    analogWrite(RIGHT_F,SPEED);
-    analogWrite(RIGHT_B,0);
-    analogWrite(LEFT_F,0);
-    analogWrite(LEFT_B,0);
+    analogWrite(MOTOR_RIGHT_F,SPEED);
+    analogWrite(MOTOR_RIGHT_B,0);
+    analogWrite(MOTOR_LEFT_F,0);
+    analogWrite(MOTOR_LEFT_B,0);
 
     currentRightSpeed = SPEED;
     currentLeftSpeed = 0;
 }
 
 void spinLeft(){
-    analogWrite(RIGHT_F,SPEED);
-    analogWrite(RIGHT_B,0);
-    analogWrite(LEFT_F,0);
-    analogWrite(LEFT_B,SPEED);
+    analogWrite(MOTOR_RIGHT_F,SPEED);
+    analogWrite(MOTOR_RIGHT_B,0);
+    analogWrite(MOTOR_LEFT_F,0);
+    analogWrite(MOTOR_LEFT_B,SPEED);
 
     currentRightSpeed = SPEED;
     currentLeftSpeed = -SPEED;
@@ -85,9 +83,9 @@ int getLeftSpeed(){
 }
 
 void stop(){
-    analogWrite(RIGHT_F,0);
-    analogWrite(RIGHT_B,0);
-    analogWrite(LEFT_F,0);
-    analogWrite(LEFT_B,0);
+    analogWrite(MOTOR_RIGHT_F,0);
+    analogWrite(MOTOR_RIGHT_B,0);
+    analogWrite(MOTOR_LEFT_F,0);
+    analogWrite(MOTOR_LEFT_B,0);
 
 }

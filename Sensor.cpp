@@ -3,6 +3,7 @@
 //
 
 #include "Sensor.h"
+#include "Pins.h"
 #include <Arduino.h>
 
 Color preRight;
@@ -22,25 +23,8 @@ bool isLGreen;
 
 int integration = 50;
 
-//ピン定義
-const int M_RIGHT = A0;
-const int RIGHT = A1;
-const int CENTER = A2;
-const int LEFT = A3;
-const int M_LEFT = A4;
-
-const int COLOR_R_DOUT;
-const int COLOR_R_RANGE;
-const int COLOR_R_CK;
-const int COLOR_R_GATE;
-
-const int COLOR_L_DOUT;
-const int COLOR_L_RANGE;
-const int COLOR_L_CK;
-const int COLOR_L_GATE;
-
 //しきい値
-const int BORDER_LINE_WHITE = 110;
+const int BORDER_LINE_WHITE = 400;
 
 const int BORDER_LINE_GREEN = 3000;
 
@@ -62,7 +46,7 @@ void colorSetUp(){
 
 void preProcessUpdate(){
     sensorUpdate();
-    rightLeftGreenUpdate();
+//    rightLeftGreenUpdate();
 }
 
 void aftProcessUpdate(){
@@ -72,11 +56,11 @@ void aftProcessUpdate(){
 //赤外線センサの値を更新
 void sensorUpdate() {
     //値読み取り
-    int rightVal = analogRead(RIGHT);
-    int leftVal = analogRead(LEFT);
-    int centerVal = analogRead(CENTER);
-    int mRVal = analogRead(M_RIGHT);
-    int mLVal = analogRead(M_LEFT);
+    int rightVal = analogRead(SENSOR_RIGHT);
+    int leftVal = analogRead(SENSOR_LEFT);
+    int centerVal = analogRead(SENSOR_CENTER);
+    int mRVal = analogRead(SENSOR_M_RIGHT);
+    int mLVal = analogRead(SENSOR_M_LEFT);
 
     printDebug(rightVal,leftVal,centerVal,mRVal,mLVal);
 

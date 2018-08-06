@@ -7,10 +7,9 @@
 
 #include "Color.h"
 #include <Arduino.h>
+#include "Pins.h"
 
 const int LAP_MAX = 16;
-const int RIGHT_PIN = A5;
-const int LEFT_PIN = A6;
 
 class RotaryEncoder {
     private:

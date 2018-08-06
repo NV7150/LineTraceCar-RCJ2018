@@ -23,21 +23,21 @@ void setup() {
 }
 
 void loop() {
-    if(!a){
-        spin90();
-    }else{
-        if(!reseted){
-            encoMan.reset();
-            reseted = true;
-        }
-        if(!b) {
-            spinback90();
-        }else {
-            stop();
-        }
-    }
+//    if(!a){
+//        spin90();
+//    }else{
+//        if(!reseted){
+//            encoMan.reset();
+//            reseted = true;
+//        }
+//        if(!b) {
+//            spinback90();
+//        }else {
+//            stop();
+//        }
+//    }
 //    moveForward();
-//    linetrace();
+    linetrace();
     //動かない場合はディレイを消す
 //    delay(50);
 //    stop();
@@ -55,18 +55,18 @@ void spinback90(){
 
 void linetrace(){
     Command command = updateCommand();
-    printCommand(command);
+//    printCommand(command);
     switch (command){
         case MOVE_FORWARD :
             moveForward();
             break;
 
         case TURN_RIGHT :
-            turnRight();
+            spinRight();
             break;
 
         case TURN_LEFT :
-            turnLeft();
+            spinLeft();
             break;
 
         case NONE :

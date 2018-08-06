@@ -4,6 +4,7 @@
 
 #include "Processor.h"
 #include "Sensor.h"
+#include "Pins.h"
 #include <Arduino.h>
 
 bool isKeeping = false;
@@ -59,13 +60,13 @@ Command branchKeep(){
         if(isKeepingGreen){
             //緑フラグが立っていたら中央のみに絞る
             isEndKeeping = (getCenter() == BLACK && getLeft() == WHITE && getRight() == WHITE);
-        }else if(keepingCom == MOVE_FORWARD){
+        }else/* if(keepingCom == MOVE_FORWARD)*/{
             //前進ならどこでもおk
             isEndKeeping = (getCenter() == BLACK || getLeft() == BLACK || getRight() == BLACK);
-        } else {
+        }/* else {
             //それ以外は中央が黒ならば
             isEndKeeping = (getCenter() == BLACK);
-        }
+        }*/
 
         if (isEndKeeping) {
             //前進できる状態に復帰

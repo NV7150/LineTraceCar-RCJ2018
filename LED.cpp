@@ -4,8 +4,7 @@
 
 #include "LED.h"
 #include <Arduino.h>
-
-const int PIN_LEDS[] = {25};
+#include "Pins.h"
 
 void setupLED(){
     for(int i = 0;i < (sizeof(PIN_LEDS) / sizeof(PIN_LEDS[0]));i++){
