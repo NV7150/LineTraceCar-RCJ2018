@@ -9,7 +9,7 @@
 /*
  * ピン
  *
- * 赤外線センサ：一番右からA0~A4
+ * 赤外線センサ：一番右から中央までA0~A2、それ以降はA13、A14
  * カラーセンサ：まだきめてない
  *
  * モータ
@@ -27,8 +27,8 @@
 const int SENSOR_M_RIGHT = A0;
 const int SENSOR_RIGHT = A1;
 const int SENSOR_CENTER = A2;
-const int SENSOR_LEFT = A3;
-const int SENSOR_M_LEFT = A4;
+const int SENSOR_LEFT = A13;
+const int SENSOR_M_LEFT = A14;
 
 const int COLOR_R_DOUT;
 const int COLOR_R_RANGE;
